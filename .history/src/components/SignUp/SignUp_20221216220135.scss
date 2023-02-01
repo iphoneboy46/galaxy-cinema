@@ -1,0 +1,49 @@
+.sign-up{
+    input {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 10px;
+        color: #43464b;
+        border: 0.5px solid #d5d5d5;
+
+        &:focus {
+            outline: solid;
+            outline-width: 1px;
+            outline-color: #43464b;
+        }
+    }
+
+    &-name-phone{
+        display: flex;
+        align-items: start;
+        justify-content:space-between;
+
+        input{
+            width: 50%;
+        }
+
+        .css-13cymwt-control{
+            width: 200px;
+            background-color: white !important;
+            border: 1px solid #d5d5d5 !important;
+        }
+
+        .css-t3ipsp-control{
+            width: 200px;
+            background-color: white !important;
+        }
+
+        .css-1jqq78o-placeholder{
+            color:black !important;
+            font-size: 14px;
+        }
+
+        .css-1dimb5e-singleValue{
+            color:black !important;
+            font-size: 14px;
+        }
+
+    }
+
+}

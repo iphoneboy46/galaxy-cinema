@@ -1,0 +1,39 @@
+
+@use '../../sass/' as * ;
+
+.ButtonOutline{
+   
+    text-transform: uppercase;
+    
+    font-weight:400;
+    display: flex;
+  
+    justify-content:space-around;
+    align-items:center;
+    flex-direction: column;
+
+    .btn-age{
+        background-color:$main-color;
+        color: white;
+        font-size: 14px;
+        padding: 2px;
+        margin-bottom: 30px;
+    }
+
+    a{
+        width: 110px;
+        height:50px;
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        font-size: 14px;
+        border: 1px solid white;
+        color:white;
+        &:hover{
+            background-color:$main-color;
+            border-color:$main-color
+        }
+    }
+
+    
+}

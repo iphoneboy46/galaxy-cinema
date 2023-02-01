@@ -1,0 +1,82 @@
+@use "../../sass/" as *;
+.sign-up{
+
+    margin-top: 30px;
+
+    input {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 10px;
+        color: #43464b;
+        border: 0.5px solid #d5d5d5;
+
+        &:focus {
+            outline: solid;
+            outline-width: 1px;
+            outline-color: #43464b;
+        }
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        background-color: $main-color;
+        outline: none;
+        color:white;
+        border:none;
+
+        &:hover{
+            background-color:#cd5f37;
+        }
+    }
+
+    &-flex{
+        display: flex;
+        align-items: start;
+        justify-content:space-between;
+
+        input{
+            width: 48%;
+            &:focus {
+                outline: solid;
+                outline-width: 1px;
+                outline-color: #43464b;
+            }
+        }
+
+        .css-13cymwt-control{
+            width: 220px;
+            background-color: white !important;
+            border: 1px solid #d5d5d5 !important;
+        }
+
+        .css-t3ipsp-control{
+            width: 220px;
+            background-color: white !important;
+            border: 1px solid #d5d5d5 !important;
+        }
+
+        .css-1jqq78o-placeholder{
+            color:#43464b !important;
+            font-size: 14px;
+        }
+
+        .css-1dimb5e-singleValue{
+            color:black !important;
+            font-size: 14px;
+        }
+
+    }
+
+    
+
+    h4{
+        color: #a0a3a7;
+        margin-bottom: 20px;
+        span{
+            color: $main-color;
+        }
+    }
+
+}

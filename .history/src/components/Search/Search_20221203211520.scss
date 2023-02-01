@@ -1,0 +1,21 @@
+.search{
+    position: relative;
+     &__input{
+        padding: 6px 25px 6px 10px;
+        width: 250px;
+        border: 1px solid #ced0da;
+        outline: none;
+        color: #43464b;
+        background-color: white;   
+        &:focus{
+            border: 1px solid #BDC0C2;
+        } 
+     }
+
+     &__icon{
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform:translateY(-50%)
+     }
+}

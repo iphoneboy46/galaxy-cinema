@@ -1,0 +1,45 @@
+@use "../../sass/" as *;
+
+.nhan-khuyen-mai{
+    h3{
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+
+    span{
+        display: block;
+        width: 80px;
+        height: 3px;
+        background-color: $main-color;
+        margin-bottom: 30px;
+    }
+
+    &-bottom{
+        
+        border: 1px solid black;
+        padding: 20px;
+        input{
+            width: 100%;
+            border: 1px solid #CED0DA;
+            padding: 10px;
+            outline: none;
+            background-color:white;
+            margin-bottom: 20px;
+        }
+
+        button{
+            background-color:$main-color;
+            width: 100%;
+            padding: 15px 0;
+            border: none;
+            color: white;
+            text-transform: uppercase;
+            font-size: 15px;
+
+            &:hover{
+                background-color: $bg-like;
+            }
+        }
+    }
+}

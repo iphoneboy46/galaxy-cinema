@@ -1,0 +1,17 @@
+import React, { useContext } from 'react'
+
+interface GheContextProviderProp {
+    children: React.ReactNode
+}
+
+export const GheContext = useContext<string>("");
+
+function GheContextProvider({children}) {
+  return (
+    <div>
+        {children}
+    </div>
+  )
+}
+
+export default GheContextProvider

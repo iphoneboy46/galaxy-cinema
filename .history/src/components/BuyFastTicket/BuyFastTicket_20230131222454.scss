@@ -1,0 +1,107 @@
+@use "../../sass/" as *;
+
+.buy-fast-ticket {
+    width: 358px;
+    height: 375px;
+    background-color: $bg-modal;
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+        background-color: white;
+     }
+   
+
+    h1 {
+        width: 200px;
+        padding: 12px 26px;
+        background-color: $main-color;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        font-weight: 200;
+        
+
+    }
+
+    .buy-content-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+           justify-content:space-around;
+          }
+        
+
+        .buy-content-item {
+            h4 {
+                font-size: 14px;
+                letter-spacing: 1px;
+                padding: 15px 20px;
+                width: 100%;
+                text-align: center;
+                color: white;
+                border-bottom: 2px solid white;
+                font-weight: 400;
+                @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                    color: black;
+                    border: 1px solid lightgray;
+                    background-color: #F7F9FA;
+                    width: 260px;
+                  }
+
+                &:hover {
+                    color: #f26b38;
+                    border-bottom: 2px solid #f26b38;
+                    font-weight: 600;
+                }
+            }
+            .active {
+                color: #f26b38;
+                border-bottom: 2px solid #f26b38;
+                font-weight: 600;
+
+                @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                    border-bottom: 1px solid black;
+                  }
+            }
+        }
+
+        
+    }
+
+    .buy-content-data{
+        padding:15px;
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            padding: 10px 0;
+          }
+    }
+
+    .btn-buy{
+        margin-right: 15px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: start;
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            width: 100%;
+          }
+
+        a{
+            background-color:$main-color;
+            color: white;
+            text-transform: uppercase;
+            padding: 10px 15px;
+           
+        }
+    }
+}
+
+.movie-select{
+    margin-bottom: 15px;
+}
+
+.movie-select:last-child{
+    margin-bottom: 5px;
+}

@@ -1,0 +1,26 @@
+.login{
+    max-width:520px;
+    background-color:white;
+    padding:30px;
+
+    &-tab{
+        display: flex;
+        align-items: center;
+        &-signin{
+            font-size: 28px;
+            text-transform: uppercase;
+            color:#43464b;
+        }
+
+        &-cheo{
+            margin: 0 30px;
+            font-size: 28px;
+        }
+
+        &-signup{
+            font-size: 28px;
+            text-transform: uppercase;
+            color:#43464b;
+        }
+    }
+}

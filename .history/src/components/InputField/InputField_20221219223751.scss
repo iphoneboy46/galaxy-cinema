@@ -1,0 +1,24 @@
+.input-field{
+    input {
+        display: block;
+        margin-bottom: 5px;
+        width: 100%;
+        padding: 10px;
+        color: #43464b;
+        border: 0.5px solid #d5d5d5;
+
+        &:focus {
+            outline: solid;
+            outline-width: 1px;
+            outline-color: #43464b;
+        }
+
+        
+    }
+    p{
+        text-align:start;
+        padding: 10px;
+        color: red;
+        font-size: 12px;
+    }
+}

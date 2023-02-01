@@ -1,0 +1,29 @@
+@use "../../sass/" as *;
+.thanh-toan{
+    background-color: $main-color;
+    width: 935px;
+    height:630px;
+    padding: 10px;
+
+    &-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px 0px;
+        h2{
+            color: white;
+            font-weight: 400;
+        }
+    }
+
+    &-content{
+        background-color:white;
+        height:550px;
+        .content-thanh-toan{
+            width:560px;
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+        }
+    }
+}

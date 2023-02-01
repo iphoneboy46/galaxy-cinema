@@ -1,0 +1,316 @@
+@use "../../sass/" as *;
+
+.header {
+    max-height: 130px;
+    background-color: #f7f9fa;
+
+    &__top {
+        max-width: 1250px;
+        margin: 0 auto;
+        max-height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        &--left {
+            display: flex;
+            align-items: center;
+            margin-right: 330px;
+            .header__logo {
+                max-width: 395px;
+                height: 50px;
+                margin-right: 105px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                @media only screen and (min-width:768px) and (max-width:1024px) {
+                    width: 100px;
+                    height: 52px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .active {
+            color: $main-color;
+        }
+
+        &--right {
+            display: flex;
+            align-items: center;
+
+            .header__login {
+                cursor: pointer;
+                color: #a8a3a7;
+                font-size: 12px;
+                transition: all 0.5s linear;
+                letter-spacing: 1px;
+                margin-right: 15px;
+                &:hover {
+                    color: $main-color;
+                }
+
+                .fa-user {
+                    margin-right: 5px;
+                }
+            }
+
+            .header__name {
+                display: flex;
+                align-items: center;
+                width: 180px;
+                cursor: pointer;
+                position: relative;
+                user-select: none;
+
+                .fa-user {
+                    background-color: $main-color;
+                    margin-right: 5px;
+                    font-size: 20px;
+                    color: white;
+                    padding: 5px;
+                }
+
+                i {
+                    font-size: 12px;
+                }
+
+                &:hover {
+                    color: $main-color;
+                }
+
+                &--list {
+                    width: 100px;
+                    color: #a8a3a7;
+                    margin-right: 15px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis !important;
+                    overflow: hidden;
+
+                    &:hover{
+                    color: $main-color;
+
+                    }
+
+                    h4 {
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }
+
+                .show{
+                    top: 100%;
+                }
+
+                &--menu{
+                    position:absolute;
+                    width: 100%;
+                    background-color: white;
+                    box-shadow: 0 5px 5px black;
+                    top: -1000%;
+                    padding: 20px 20px 0 20px;
+                    color: #a8a3a7;
+                    font-size: 14px;
+                    z-index: 1000;
+                    ul{
+                        li{
+                            margin-bottom: 20px;
+                            transition: all 0.2s linear;
+                            &:hover{
+                                color:$main-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .header__language {
+                color: #a8a3a7;
+                font-size: 12px;
+                cursor: pointer;
+                .nth2 {
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        background-color: black;
+
+        .menu-list {
+            height: 50px;
+            max-width: 1250px;
+            margin: 0 auto;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+
+            .fa-angle-down {
+                margin-left: 5px;
+                font-size: 10px;
+            }
+
+            .movie {
+                position: relative;
+            }
+
+            .movie-a {
+                width: 179px;
+                height: 50px;
+                text-align: center;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.5s linear;
+                position: relative;
+                &:hover {
+                    color: $main-color;
+                }
+
+                &:hover ~ .menu--movie {
+                    display: block;
+                }
+            }
+
+            .movie-gda {
+                position: relative;
+                &:hover ~ .movie-children {
+                    display: block;
+                }
+            }
+
+            .movie-sk {
+                position: relative;
+                &:hover ~ .movie-children {
+                    display: block;
+                }
+            }
+
+            .movie-children {
+                position: absolute;
+                top: 130px;
+                display: none;
+                transition: all 0.5s linear;
+                z-index: 2;
+
+                &:hover {
+                    display: block;
+                }
+            }
+
+            li > a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 179px;
+                height: 50px;
+                color: white;
+                transition: all 0.5s linear;
+                &:hover {
+                    color: $main-color;
+                }
+            }
+
+            .menu--movie {
+                transition: all 0.5s linear;
+                display: none;
+                width: 1060px;
+                height: 515px;
+                background-color: black;
+                top: 50px;
+                position: absolute;
+                padding: 18px 30px;
+                z-index: 5;
+
+                &:hover {
+                    display: block;
+                }
+
+                .movie--showing {
+                    margin-bottom: 20px;
+                    &-link {
+                        font-size: 14px;
+                        color: white;
+                        display: block;
+                        text-align: start;
+                        transition: all 0.5s linear;
+                        margin-bottom: 10px;
+                        &:hover {
+                            color: $main-color;
+                        }
+                    }
+                    span {
+                        width: 50px;
+                        height: 2px;
+                        background-color: $main-color;
+                        display: inline-block;
+                        margin-bottom: 20px;
+                    }
+
+                    .movie-showing-list {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        .movie-showing-item {
+                            position: relative;
+                            &:hover > .movie-showing-hover {
+                                visibility: visible;
+                            }
+                            &-img {
+                                width: 225px;
+                                height: 138px;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .movie-showing-hover {
+                                transition: all 0.1s ease-in-out;
+                                visibility: hidden;
+                                position: absolute;
+                                top: 0%;
+                                background-color: $bg-modal;
+                                width: 223px;
+                                height: 138px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            h4 {
+                                margin-top: 2px;
+                                font-weight: 400;
+                                letter-spacing: 1;
+                                font-size: 12px;
+                            }
+
+                            h5 {
+                                margin-top: 2px;
+                                font-weight: 400;
+                                letter-spacing: 1;
+                                font-size: 12px;
+                                color: #898c88;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

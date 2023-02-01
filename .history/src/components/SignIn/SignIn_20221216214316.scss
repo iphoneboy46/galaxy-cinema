@@ -1,0 +1,50 @@
+@use "../../sass/" as *;
+
+.sign-in {
+    h5 {
+        color: #a0a3a7;
+        font-size: 14px;
+        margin: 30px 0;
+        font-weight: 400;
+    }
+
+    input {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 10px;
+        color: #43464b;
+        border: 0.5px solid #d5d5d5;
+
+        &:focus {
+            outline: solid;
+            outline-width: 1px;
+            outline-color: #43464b;
+        }
+    }
+
+    a{
+        display: block;
+        color: #a0a3a7;
+        font-size: 14px;
+        margin: 30px 0;
+        font-weight: 400;
+
+        &:hover{
+            color:$main-color;
+        }
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        background-color: $main-color;
+        outline: none;
+        color:white;
+        border:none;
+
+        &:hover{
+            background-color:#f26b38;
+        }
+    }
+}

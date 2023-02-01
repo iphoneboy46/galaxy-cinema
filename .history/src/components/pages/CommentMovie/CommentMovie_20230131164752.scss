@@ -1,0 +1,160 @@
+@use "../../../sass/" as *;
+
+.comment-movie {
+    width: 1250px;
+    margin: 30px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    a {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 10px;
+        display: block;
+        &:hover {
+            color: $main-color;
+        }
+    }
+
+    span {
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: $main-color;
+        margin-bottom: 30px;
+    }
+
+    &-left {
+        &-item {
+            width: 820px;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 30px;
+            &-img {
+                width: 220px;
+                height: 150px;
+                margin-right: 10px;
+                position: relative;
+                transition: all 0.5s ease-in-out;
+                &:hover > .comment-movie-item-hover {
+                    visibility: visible;
+                }
+
+                &:hover ~ .comment-movie-item-right > .comment-movie-a {
+                    color: $main-color;
+                }
+                img {
+                    width: 220px;
+                    height: 150px;
+                }
+
+                .comment-movie-item-hover {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    background-color: $bg-modal;
+                    visibility: hidden;
+                }
+            }
+
+            &-right {
+                &:hover > .comment-movie-a {
+                    color: $main-color;
+                }
+
+                .comment-movie-a {
+                    color: black;
+                }
+                .comment-movie-item-des {
+                    width: 250px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 10px;
+
+                    .comment-movie-item-like {
+                        .like {
+                            background-color: $bg-like;
+                            padding: 5px;
+                            color: white;
+                            font-size: 10px;
+                            font-weight: bold;
+                            border-radius: 5px;
+                            i {
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+
+                    .comment-movie-item-view {
+                        font-size: 10px;
+                        font-weight: bold;
+                        color: black;
+                        padding: 6px;
+                        background-color: #e9edf1;
+                        border-radius: 5px;
+                        i {
+                            margin-right: 5px;
+                        }
+                    }
+
+                    .comment-movie-item-rating {
+                        display: flex;
+                        align-items: center;
+                        font-weight: bold;
+                        font-size: 15px;
+                        letter-spacing: 1px;
+                        i {
+                            color: $start-color;
+                        }
+
+                        p {
+                            color: #a0a3a7;
+                            font-weight: 200;
+                        }
+                    }
+                }
+            }
+
+            &-tt {
+                color: #b0b3b6;
+                font-size: 14px;
+                font-weight: lighter;
+            }
+        }
+    }
+
+    &-right {
+        &-top {
+            .css-1u9des2-indicatorSeparator {
+                width: 0;
+            }
+
+            .css-13cymwt-control{
+                background-color: white !important;
+                color: black !important;
+            }
+            .buy-fast-ticket {
+                height: 400px;
+                background-color: #f7f8f9;
+
+               
+
+                .buy-content-list {
+                    .buy-content-item {
+                        .active{
+                            color:$main-color;
+                        }
+                        h4 {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

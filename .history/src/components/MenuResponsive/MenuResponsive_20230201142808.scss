@@ -1,0 +1,40 @@
+@use "../../sass/" as *;
+.menu-responsive{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    z-index: 1000;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &-exits{
+        position: absolute;
+        font-size: 40px;
+        top:10px;
+        right: 20px;
+        
+    }
+
+    &-search{
+        width: 250px;
+        margin: 30px 0;
+    }
+
+    ul{
+        text-transform: uppercase;
+        li{
+            text-align: right;
+        }
+        li a{
+            width: 100%;
+            font-size:18px;
+            text-align: end;
+
+        }
+    }
+
+}

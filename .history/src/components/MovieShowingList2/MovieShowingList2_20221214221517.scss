@@ -1,0 +1,72 @@
+@use "../../sass/" as *;
+.movie-showing-list-content2 {
+    
+
+    h3{
+        text-transform: uppercase;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+
+    span{
+        display: block;
+        width: 80px;
+        height: 3px;
+        background-color: $main-color;
+        margin-bottom: 30px;
+    }
+
+    .movie-showing-item-content2 {
+        width: 100%;
+        height: 315px;
+        margin-bottom: 10px;
+
+        &-img {
+            width: 100%;
+            height: 260px;
+            margin-bottom: 10px;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            &:hover > .btn-outline {
+                display: block;
+            }
+
+            .btn-outline {
+                width: 100%;
+                height: 100%;
+                background-color: $bg-modal;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: none;
+                .btn{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+        }
+
+        h3 {
+            font-size: 16px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
+            overflow: hidden;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        h3:last-child {
+            color: #a0a37a;
+        }
+    }
+}

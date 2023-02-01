@@ -1,0 +1,156 @@
+@use "../../sass/" as *;
+
+.movie-content {
+    hr {
+        display: block;
+        width: 600px;
+        border-color: #dddddd;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 767px) {
+            width: 400px;
+           }
+    }
+
+    &-choose {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        cursor: pointer;
+        user-select: none;
+
+        .movie-content-show.active {
+            color: black;
+            span {
+                transform: scale(1);
+            }
+        }
+
+        .movie-content-wait.active {
+            color: black;
+            span {
+                transform: scale(1);
+            }
+        }
+
+        .movie-content-show {
+            padding: 15px 0;
+            font-size: 18px;
+            text-transform: uppercase;
+            text-align: left;
+            margin-right: 30px;
+            color: #a0a3a7;
+            position: relative;
+            transition: all 0.5s linear;
+
+            &:hover {
+                color: black;
+            }
+
+            &:hover > span {
+                transform: scale(1);
+            }
+
+            span {
+                position: absolute;
+                transform: scale(0);
+                bottom: 0%;
+                width: 100%;
+                left: 0%;
+                height: 3px;
+                background-color: #f26b38;
+                transition: all 0.5s ease-in-out;
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                font-size: 14px;
+             }
+
+             @media screen and (max-width: 767px) {
+               font-size: 12px;
+              }
+        }
+
+        .movie-content-wait {
+            padding: 15px 0;
+            font-size: 18px;
+            text-transform: uppercase;
+            text-align: left;
+            color: #a0a3a7;
+            position: relative;
+            transition: all 0.5s linear;
+
+            &:hover {
+                color: black;
+            }
+
+            &:hover > span {
+                transform: scale(1);
+            }
+
+            span {
+                position: absolute;
+                transform: scale(0);
+                bottom: 0%;
+                width: 100%;
+                left: 0%;
+                height: 3px;
+                background-color: #f26b38;
+                transition: all 0.5s ease-in-out;
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                font-size: 14px;
+             }
+
+             @media screen and (max-width: 767px) {
+                font-size: 12px;
+               }
+        }
+
+        
+    }
+
+    .movie-btn-more{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 50px 0;
+
+        @media screen and (max-width: 767px) {
+           margin-bottom: 0;
+           }
+
+        .btn-more {
+            display: flex;
+            width: 146px;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $main-color;
+            padding: 15px 0px;
+            color:$main-color;
+            text-transform: uppercase;
+            transition: all 0.5s linear;
+            cursor: pointer;
+            &:hover{
+                background-color:$main-color;
+                color: white;
+            }
+
+            
+    
+            i {
+                margin-left: 10px;
+                
+            }
+
+            @media screen and (max-width: 767px) {
+                width: 100px;
+                padding: 10px 0;
+                font-size: 12px;
+               }
+        }
+    }
+
+   
+}

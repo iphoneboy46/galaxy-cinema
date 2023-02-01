@@ -1,0 +1,14 @@
+.search{
+    position: relative;
+     &__input{
+        padding: 5px;
+        width: 250px;
+        border: 1px solid #ced0da;
+        outline: none;
+        color: #43464b;
+        background-color: white;   
+        :focus{
+            border: 1px solid red;
+        } 
+     }
+}

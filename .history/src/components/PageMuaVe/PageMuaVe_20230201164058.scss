@@ -1,0 +1,29 @@
+.page-mua-ve{
+    width: 1250px;
+    margin: 10px auto;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+        padding: 10px;
+        overflow: hidden;
+    }
+    &-right{
+        right: 0;
+        position: absolute;
+        transition: all 0.5s ease-in-out;
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+           position: relative;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+        padding: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+}

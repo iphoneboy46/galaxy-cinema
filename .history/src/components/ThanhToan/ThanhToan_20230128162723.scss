@@ -1,0 +1,164 @@
+@use "../../sass/" as *;
+.thanh-toan {
+    background-color: $main-color;
+    width: 935px;
+    height: 630px;
+    padding: 10px;
+    
+
+    &-alert1{
+        position: fixed;
+        background-color: white;
+        left: 50%;
+        transform: translateX(-50%);
+        width:520px;
+        height: 212px;
+        z-index: 100;
+        padding: 30px;
+
+        h2{
+            color:$main-color;
+            font-weight:400;
+            line-height: 42px;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p{
+            color:#a5a8ac;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px 0px;
+        h2 {
+            color: white;
+            font-weight: 400;
+        }
+    }
+
+    &-content {
+        margin-top: 10px;
+        background-color: white;
+        height: 550px;
+        padding: 50px;
+
+        .content-thanh-toan {
+            h4 {
+                font-weight: 400;
+            }
+            width: 560px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .select{
+                width: 335px;
+            }
+        }
+
+        .content-input {
+            h4 {
+                font-weight: 400;
+            }
+            width: 560px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            input {
+                width: 335px;
+                padding: 10px;
+                border: 1px solid #ced0da;
+                font-size: 14px;
+
+                &:focus-visible {
+                    border: 1px solid black;
+                    outline: none;
+                }
+            }
+        }
+
+        .content-input-btn {
+            width: 560px;
+           display: flex;
+           align-items: flex-end;
+           flex-direction: column;
+
+           button{
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            width:335px;
+            background-color: $main-color;
+            outline: none;
+            border: none;
+            padding: 15px 0;
+            transition: all .8s ease-in-out; 
+            &:hover{
+                background-color: #e26435;
+            }
+           }
+        }
+
+        .content-thanh-toan-end{
+            width: 560px;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+          
+            .content-thanh-toan-end-note{
+                margin: 20px 0;
+                width:335px;
+                p{
+                    font-size: 12px;
+                    a{
+                        font-weight:500;
+                        transition: all .8s ease-in-out;
+                        &:hover{
+                            color:$main-color;
+                        }
+                    }
+                }
+            }
+
+            .content-thanh-toan-end-btn{
+                width:335px;
+                display: flex;
+                align-items:center;
+                justify-content: space-between;
+                cursor: pointer;
+                user-select: none;
+                .btn-quay-lai{
+                    text-align: center;
+                    color:white;
+                    padding:15px 0;
+                    width: 150px;
+                    background-color: $main-color;
+                    transition: all .8s ease-in-out; 
+                    &:hover{
+                        background-color: #e26435;
+                    }
+                }
+
+                .btn-thanh-toan{
+                    text-align: center;
+                    color:white;
+                    padding:15px 0;
+                    width: 150px;
+                    background-color: $main-color;
+                    transition: all .8s ease-in-out; 
+                    &:hover{
+                        background-color: #e26435;
+                    }
+                }
+            }
+        }
+    }
+}
