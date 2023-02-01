@@ -1,7 +1,16 @@
 @use "../../sass/" as *;
 
 .sign-in {
-    
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        padding: 10px;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+        padding: 10px;
+       
+    }
     h5 {
         color: #a0a3a7;
         font-size: 14px;
