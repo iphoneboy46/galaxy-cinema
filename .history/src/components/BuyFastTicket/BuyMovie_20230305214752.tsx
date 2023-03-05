@@ -395,7 +395,7 @@ function BuyMovie({
           rap: rapSo,
           galaxy: rapName.slice(6).trim(),
           thu: thuFormat,
-          date: date.split("/").join("-"),
+          date: date.split("-").reverse().join("-"),
         });
       }
     });

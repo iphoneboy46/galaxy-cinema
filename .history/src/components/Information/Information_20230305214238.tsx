@@ -15,9 +15,8 @@ function Information({ choosePage, page }: InformationProps) {
   const info = JSON.parse(localStorage.getItem("info") || "{}");
   console.log(info);
   const date = info.date;
-  console.log(date);
+
   const dateRevers = date.split("-").reverse().join("-");
-  console.log(dateRevers);
   const age1 = info.age;
   const agenum = age1.slice(1);
 
